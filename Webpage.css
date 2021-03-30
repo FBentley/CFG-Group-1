@@ -1,0 +1,70 @@
+.Links {
+    display:inline-block;
+    padding: 5px;
+}
+
+{
+    box-sizing: border-box;
+   }
+  
+   input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+   }
+
+   input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+     border: none;
+     cursor: pointer;
+   }
+   input[type=submit]:hover {
+     background-color: #45A049;
+   }
+
+   .container {
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    padding: 10px;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+     padding: 20px;
+   }
+
+   .row:after {
+    content: "";
+   display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+     width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .col {
+      padding: 60px
+  }
+
+  .form-select {
+    width : 300px !important;
+}
+
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 40px;

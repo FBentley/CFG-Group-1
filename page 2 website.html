@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Play Now</title>
+        <link rel="stylesheet" href="Webpage.css">
+        <script src="Website.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Welcome</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Webpage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="page 2 website.html">Play Now</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contact Us.html">Contact Us</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+
+          <div class="p-3 mb-2 bg-light text-dark">
+
+            <header>
+              <h1 class="header">The Europe Game</h1>
+          </header>
+
+          <p>
+            Select the country you think the monument is from and then check your answer to see if you are correct!
+        </p>
+        
+
+            <div class="container">
+              <div class="row align-items-start">
+                <div class="col">
+                  <img src="athens.jpg" width="300" height="200">
+
+                  <select id="select1">
+                    <option>Please select something</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Norway">Norway</option>
+                  </select>
+                  <button type="button" class="btn btn-success" onclick="Q1 ()">Try it</button>
+                </div>
+                <script>
+                  var select1 = document.getElementById("select1");
+                  function Q1(){
+                    if(select1.value === "Greece"){
+                      alert("Correct! Well done :)");
+                    } else if (select1.value === "Norway" ) {
+                    alert("Sorry that s incorrect- try again!");
+                    }
+                    else if (select1.value === "Italy" ) {
+                    alert("Sorry that is incorrect- try again!");
+                    }
+                  }
+                  select1.onclick = Q1;
+                </script>
+
+                
+                <div class="col">
+                  <img src="banner-day.jpg" width="300" height="200">
+
+                  <select id="select2">
+                    <option>Please select something</option>
+                    <option value="UK">UK</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Poland">Poland</option>
+                  </select>
+                  <button type="button" class="btn btn-success" onclick="Q2 ()">Try it</button>
+                </div>
+                <script>
+                  var select2 = document.getElementById("select2");
+                  function Q2(){
+                    if(select2.value === "Poland"){
+                      alert("Correct! Well done :)");
+                    } else if (select2.value === "UK" ) {
+                    alert("Sorry that is incorrect- try again!");
+                    }
+                    else if (select2.value === "Germany" ) {
+                    alert("Sorry that is incorrect- try again!");
+                    }
+                  }
+                  select2.onclick = Q2;
+                </script>
+            
+
+                  
+              <div class="row align-items-center">
+                <div class="col">
+                  <img src="big ben.jpg" width="300" height="200">
+
+                  <select id="select3">
+                    <option>Please select something</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="UK">UK</option>
+                    <option value="Belgium">Belgium</option>
+                  </select>
+                  <button type="button" class="btn btn-success" onclick="Q3 ()">Try it</button>
+                </div>
+                <script>
+                  var select3 = document.getElementById("select3");
+                  function Q3(){
+                    if(select3.value === "UK"){
+                      alert("Correct! Well done :)");
+                    } else if (select3.value === "Portugal" ) {
+                    alert("Sorry that is incorrect- try again!");
+                    }
+                    else if (select3.value === "Belgium" ) {
+                    alert("Sorry that is incorrect- try again!");
+                    }
+                  }
+                  select3.onclick = Q3;
+                </script>
+
+              
+                <div class="col">
+                  <img src="berlin.jpg" width="300" height="200">
+
+                  <select id="select4">
+                    <option>Please select something</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Turkey">Turkey</option>
+                  </select>
+                  <button type="button" class="btn btn-success" onclick="Q4 ()">Try it</button>
+                </div>
+                <script>
+                  var select4 = document.getElementById("select4");
+                  function Q4(){
+                    if(select4.value === "Germany"){
+                      alert("Correct! Well done :)");
+                    } else if (select4.value === "Sweden" ) {
+                    alert("Sorry that is incorrect- try again!");
+                    }
+                    else if (select4.value === "Turkey" ) {
+                    alert("Sorry that is incorrect- try again!");
+                    }
+                  }
+                  select4.onclick = Q4;
+                </script>
+
+
+                </div>            
+            
+              <div class="row align-items-end">
+                <div class="col">
+                  <img src="france.jpg" width="300" height="400" > 
+
+                  <select id="select5">
+                    <option>Please select something</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Switzerland">Switerland</option>
+                    <option value="France">France</option>
+                  </select>
+                  <button type="button" class="btn btn-success" onclick="Q5 ()">Try it</button>
+                </div>
+                <script>
+                  var select5 = document.getElementById("select5");
+                  function Q5(){
+                    if(select5.value === "France"){
+                      alert("Correct! Well done :)");
+                    } else if (select5.value === "Ireland" ) {
+                    alert("Sorry that is incorrect- try again!");
+                    }
+                    else if (select5.value === "Switzerland" ) {
+                    alert("Sorry that is incorrect- try again!");
+                    }
+                  }
+                  select5.onclick = Q5;
+                </script>
+                
+
+                <div class="col">
+                  <img src="pisa.jpg" width="300" height="400">
+
+                  <select id="select6">
+                    <option>Please select something</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Portugal">Portugal</option>
+                  </select>
+                  <button type="button" class="btn btn-success" onclick="Q6 ()">Try it</button>
+                </div>
+                <script>
+                  var select6 = document.getElementById("select6");
+                  function Q6(){
+                    if(select6.value === "Italy"){
+                      alert("Correct! Well done :)");
+                    } else if (select6.value === "Spain" ) {
+                    alert("Sorry that is incorrect- try again!");
+                    }
+                    else if (select6.value === "Portugal" ) {
+                    alert("Sorry that is incorrect- try again!");
+                    }
+                  }
+                  select6.onclick = Q6;
+                </script>
+
+                </div>             
+              </div>
+            </div>
+          </div>
+
+       
+
+    </body>
+    </html>
